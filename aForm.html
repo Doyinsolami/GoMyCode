@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Admission form</title>
+        <link rel="stylesheet" href="aForm.css">
+        <script defer type="text/javascript" src="n.js"></script>
+    </head>
+    <body style="  border:1px black solid;">
+        <form id="form">
+       <h1 class="title" style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">ADMISSION FORM </h1><hr>
+       <div id="error"></div>
+       <ol>
+       <li><p>
+           <label>Student's Name(Capital letter):</label>
+           <span>
+               <input required id="name" type="text" name="" placeholder="" size="40"  class="">
+            </span>
+            </label></p>
+           </span>
+       </p>
+    </li>
+<!---->
+    <li><p>
+        <label>Father's's Name(Capital letter):</label>
+        <span>
+            <input required id="name" type="text" name="" placeholder="" size="40"  class="">
+         </span>
+         </label></p>
+        </span>
+         </p>
+        </li>
+                <!---->
+        <li><p>
+            <label>Mother's Name(Capital letter):</label>
+            <span>
+                <input  required id="name" type="text" name="" placeholder="" size="40"  class="">
+             </span>
+             </label></p>
+            </span>
+        </p>
+     </li>
+            <!---->
+            <li><p>
+           <label>Address:</label>
+           <span>
+               <input  required type="text" name="" placeholder="" size="40"  class="">
+            </span>
+            </label></p>
+           </span>
+       </p>
+    </li>
+            <!---->
+    <li><p>
+        <label>Nationality:</label>
+        <span>
+            <input required type="text" id="nationality" name="" placeholder="" size="40"  class="">
+         </span>
+         </label></p>
+        </span>
+    </p>
+ </li>      
+                <!---->
+                <li>
+                    Sex:
+                    <br>
+                   <span> <select id="gender">
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                        <option value="Rather not say">Rather not say</option>
+                    </select></span><br><br>
+                    <!---->
+            <li>Date of Birth <br>
+                 <input required id="dob" type="date">
+                    </li><br>
+                    <!---->
+            <li>
+               <label >Religion:</label> <br>
+                <input type="radio" name="but">Christian<br>
+                <input type="radio" name="but">Muslim<br>
+                <input type="radio" name="but">Hindu<br>
+                <input type="radio" name="but">Other<br>
+            </li>  <br>
+                <!---->
+                <li>
+                    <label>Mobile Number:</label><br>
+                    <span> <select id="number" >
+                        <option value="">+234</option>
+                        <option value="">+123</option>
+                        <option value="">+456</option>
+                        <option value="">+248</option>
+                    </select></span>
+                    <span><input type="text" required></span>
+                </li><br>
+                <!---->
+                <li><label>Email(Required)</label><br>
+                <input id="email" type="email" required></li>
+             </ol>
+             <button id="submit" onclick=clickMe()>SUBMIT</button>
+            </form>
+           <script>
+                var submit = document.getElementById('submit')
+                function clickMe(){
+                   
+                    alert("Thanks for Applying")
+                }
+
+            </script>
+    </body>
+</html>
